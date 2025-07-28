@@ -5,7 +5,7 @@ import urllib.parse
 from scrapy.selector import Selector
 
 class ArxivSpider(scrapy.Spider):
-    name = "arxiv"
+    name = "ArxivSpider"
     allowed_domains = ["arxiv.org"]
 
     def __init__(self, *args, **kwargs):
