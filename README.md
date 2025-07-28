@@ -1,3 +1,46 @@
+[TOC]
+
+# Thanks
+
+感谢原作者：[dw-dengwei/daily-arXiv-ai-enhanced](https://github.com/dw-dengwei/daily-arXiv-ai-enhanced)  的项目  
+
+# Custom List
+
+根据自己的需要，做了如下修改：
+* 🔧 原逻辑：使用环境变量中指定的 `CATEGORIES=cs.CL,cs.CV` 类别，调用`scrapy`进行爬取。现逻辑：将爬取源切换为 `arXiv 的高级搜索`页面，根据预置仓库环境变量`SEARCH_TERMS`关键词进行关键词查询。
+* 🧠 修改每天最多根据关键词爬取 200 篇论文，以节省开销。（arXiv 的高级搜索页面限制）
+* 🧠 调用LLM API增加延迟，根据预置仓库环境变量`API_DELAY_SECONDS`，避免连续快速调用LLM API 触发限制。
+* 🧪 环境变量举例：
+   * SEARCH_TERMS = fraud detect, spreadsheet excel fault predict
+   * API_DELAY_SECONDS = 15
+
+
+# TODO
+TODO Lists：
+- [🎯 ] 增加每日爬取最多论文的限制；
+
+# 恰饭
+![IMG_9411](https://p.ipic.vip/kpsg5x.jpg)
+
+
+1. [![Powered by DartNode](https://dartnode.com/branding/DN-Open-Source-sm.png)](https://dartnode.com "Powered by DartNode - Free VPS for Open Source")
+
+2. 开发者需要免费服务的，推荐使用每个月免费$5额度的云服务。
+[https://console.run.claw.cloud/signin?link=XHJEEP7HEVIR](https://console.run.claw.cloud/signin?link=XHJEEP7HEVIR)
+
+3. [Cloudcone VPS](https://app.cloudcone.com/?ref=12850)
+
+
+
+
+
+
+
+
+
+----------
+
+
 # 🚀 daily-arXiv-ai-enhanced
 
 > Your AI-powered daily digest of arXiv papers - making research reading smarter and more personalized!
